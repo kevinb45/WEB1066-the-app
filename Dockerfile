@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/node/
-FROM java:openjdk9
+FROM openjdk:9
 
 # use debug to troubleshoot
 ENV LOG_LEVEL=error
