@@ -10,16 +10,16 @@ ENV WEBHOOK_PROXY_URL=https://localhost:3000/
 ENV PRIVATE_KEY="someprivatestring"
 
 # see https://github.com/nodejs/docker-node/blob/e3ec2111af089e31321e76641697e154b3b6a6c3/docs/BestPractices.md#global-npm-dependencies
-ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
-ENV PATH=$PATH:/home/node/.npm-global/bin
+ENV NPM_CONFIG_PREFIX=/home/kevinb45/.npm-global
+ENV PATH=$PATH:/home/kevinb45/.npm-global/bin
 
 # Lets install our app into /home/node
-COPY . /home/node/the-app
-RUN chown -R node:node /home/node/the-app
+COPY . /home/kevinb45/the-app
+RUN chown -R kevinb45:kevinb45 /home/node/the-app
 
 # setup our app
 # non-root user  https://github.com/nodejs/docker-node/blob/e3ec2111af089e31321e76641697e154b3b6a6c3/docs/BestPractices.md#non-root-user
-USER node
+USER kevinb45
 
-WORKDIR /home/node/the-app
+WORKDIR /home/kevinb45/the-app
 RUN npm install
