@@ -6,6 +6,3 @@ jdk:
   ./gradlew clean jar
 
   echo 'testing coming soon'
-
-  ./gradlew test
-
