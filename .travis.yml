@@ -4,3 +4,5 @@ jdk:
   - openjdk9
   
 ./gradlew clean jar
+
+echo 'testing coming soon'
