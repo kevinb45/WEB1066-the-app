@@ -3,9 +3,9 @@ language: java
 jdk:
   - openjdk9
 
-./gradlew clean jar
+  ./gradlew clean jar
 
-echo 'testing coming soon'
+  echo 'testing coming soon'
 
-./gradlew test
+  ./gradlew test
 
